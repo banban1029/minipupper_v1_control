@@ -1,6 +1,6 @@
 from setuptools import find_packages, setup
 
-package_name = 'mini.banban'
+package_name = 'mini_banban'
 
 setup(
     name=package_name,
