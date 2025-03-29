@@ -1,11 +1,12 @@
 from setuptools import find_packages, setup
 
-package_name = 'mini_banban'
+package_name = 'minipupper_v1_control'
 
 setup(
     name=package_name,
     version='0.0.0',
-    packages=find_packages(exclude=['test']),
+    packages=find_packages('src',exclude=['test']),
+    package_dir={'': 'src'},
     data_files=[
         ('share/ament_index/resource_index/packages',
             ['resource/' + package_name]),
@@ -20,7 +21,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'calibrate = mini.banban.calibrate:main'
+            'calibrate.banban = minipupper_v1_control.calibrate:main' 
         ],
     },
 )
