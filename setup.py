@@ -21,7 +21,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'calibrate.banban = minipupper_v1_control.calibrate:main' 
+            'calibrate.banban = minipupper_v1_control.calibrate:main' ,
+            'gradio.banban = minipupper_v1_control.gradio:main' 
         ],
     },
 )
